@@ -70,7 +70,7 @@ body {
 }
 
 .squareContainer {
-    width: 80%;
+    width: 40%;
     max-width: 360px;
     border: 2px solid Black;
     padding: 20px;
@@ -78,8 +78,14 @@ body {
     margin: auto;
 }
 
-.titleDivision {
-    border-bottom: 1px solid DEEPSKYBLUE;
+.division {
+    border-bottom: 4px solid LIGHTSKYBLUE;
+}
+
+.principalButton {
+    border-radius: 8px;
+    background-color: LIGHTSKYBLUE;
+    border:none;
 
 }
 
