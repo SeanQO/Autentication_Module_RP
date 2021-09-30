@@ -3,8 +3,20 @@
 @{
     ViewData["Title"] = "Home page";
 }
-
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<head>
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<div class="squareContainer">
+        <div class="titleDivision">
+            <h3>Sign in</h3>
+        </div>
+        <div>
+            <label>Username</label>
+            <input type="text" id="uName" name="username">
+        </div>
+        <div>
+            <label>Password</label>
+            <input type="password" id="psw" name="password">
+        </div>
 </div>
+

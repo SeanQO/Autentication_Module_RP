@@ -1,10 +1,9 @@
 ﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
-
 a.navbar-brand {
-  white-space: normal;
-  text-align: center;
-  word-break: break-all;
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
 }
 
 /* Provide sufficient contrast against white background */
@@ -69,3 +68,18 @@ body {
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
 }
+
+.squareContainer {
+    width: 80%;
+    max-width: 360px;
+    border: 2px solid Black;
+    padding: 20px;
+    /*margin: 20 20;*/
+    margin: auto;
+}
+
+.titleDivision {
+    border-bottom: 1px solid DEEPSKYBLUE;
+
+}
+
