@@ -20,14 +20,6 @@ namespace Autentication_Module_RP.Pages
             _context = context;
         }
 
-        public new IList<User> User { get; set; }
-
-        public async Task OnGetAsync()
-        {
-            User = await _context.User.ToListAsync();
-            
-        }
-
         [BindProperty]
         public string Username { get; set; }
 

@@ -12,14 +12,14 @@
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
 <body>
-    <form method="post" asp-page="Index">
-        <div class="squareContainer">
-            <div class="division" style="max-height:min-content">
-                <h3>Sign in</h3>
+    <div class="squareContainer">
+        <div class="division" style="max-height:min-content">
+            <h3>Sign in</h3>
 
-            </div>
-            <br />
+        </div>
+        <br />
 
+        <form method="post" asp-page="Index">
             <div>
 
                 <label>Username</label>
@@ -39,20 +39,20 @@
             </div>
             <br />
 
-            <div class="division">
-            </div>
-            <br />
+        </form>
+        
+        <div class="division">
+        </div>
+        <br />
 
-            <div>
-                <label>New User</label>
-                <br />
-                <button class="principalButton" id="signUp" name="signUp" style="color:white" onclick="signUp()"><b>SIGN UP</b></button>
-                <script src="~/js"></script>
-            </div>
+        <div>
+            <label>New User</label>
             <br />
-        </div>   
-    </form>
-    
+            <button class="principalButton" id="signUp" name="signUp" style="color:white" onclick="signUp()"><b>SIGN UP</b></button>
+            <script src="~/js"></script>
+        </div>
+        <br />
+    </div>
 
 </body>
 </html>
