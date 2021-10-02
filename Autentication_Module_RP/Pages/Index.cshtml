@@ -13,43 +13,44 @@
 </head>
 <body>
     <form method="post" asp-page="Index">
-        <div class="division" style="max-height:min-content">
-            <h3>Sign in</h3>
+        <div class="squareContainer">
+            <div class="division" style="max-height:min-content">
+                <h3>Sign in</h3>
 
-        </div>
-        <br />
-
-        <div>
-
-            <label>Username</label>
+            </div>
             <br />
-            <input type="text" id="uName" name="username" asp-for="@Model.Username">
-        </div>
 
-        <div>
-            <label>Password</label>
+            <div>
+
+                <label>Username</label>
+                <br />
+                <input type="text" id="uName" name="username" asp-for="@Model.Username">
+            </div>
+
+            <div>
+                <label>Password</label>
+                <br />
+                <input type="password" id="psw" name="password" asp-for="@Model.Password">
+            </div>
             <br />
-            <input type="password" id="psw" name="password" asp-for="@Model.Password">
-        </div>
-        <br />
 
-        <div>
-            <input type="submit" value="SIGN IN">
-        </div>
-        <br />
-
-        <div class="division">
-        </div>
-        <br />
-
-        <div>
-            <label>New User</label>
+            <div>
+                <input type="submit" value="SIGN IN">
+            </div>
             <br />
-            <button class="principalButton" id="signUp" name="signUp" style="color:white" onclick="signUp()"><b>SIGN UP</b></button>
-            <script src="~/js"></script>
-        </div>
-        <br />
-        
+
+            <div class="division">
+            </div>
+            <br />
+
+            <div>
+                <label>New User</label>
+                <br />
+                <button class="principalButton" id="signUp" name="signUp" style="color:white" onclick="signUp()"><b>SIGN UP</b></button>
+                <script src="~/js"></script>
+            </div>
+            <br />
+        </div>   
     </form>
     
 
