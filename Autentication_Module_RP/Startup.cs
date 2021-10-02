@@ -29,6 +29,11 @@ namespace Autentication_Module_RP
 
             services.AddDbContext<RDPCUserContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("RDPCUserContext")));
+
+            services.AddSession();
+
+            services.AddControllers(options => options.EnableEndpointRouting = false);
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -45,6 +50,10 @@ namespace Autentication_Module_RP
                 app.UseHsts();
             }
 
+            app.UseSession();
+
+            app.UseMvc();
+
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
@@ -57,5 +66,6 @@ namespace Autentication_Module_RP
                 endpoints.MapRazorPages();
             });
         }
+
     }
 }

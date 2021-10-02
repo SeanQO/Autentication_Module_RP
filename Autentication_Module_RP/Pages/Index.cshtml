@@ -1,49 +1,57 @@
 ﻿@page
-@model IndexModel
+@model Autentication_Module_RP.Pages.IndexModel
 @{
     ViewData["Title"] = "Home page";
 }
+
+<!DOCTYPE html>
+
+<html>
 <head>
+    <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
-<div class="squareContainer">
-    <div class="division" style="max-height:min-content">
-        <h3>Sign in</h3>
+<body>
+    <form method="post" asp-page="Index">
+        <div class="division" style="max-height:min-content">
+            <h3>Sign in</h3>
 
-    </div>
-    <br />
-
-    <div>
-
-        <label>Username</label>
+        </div>
         <br />
-        <input type="text" id="uName" name="username">
-    </div>
 
-    <div>
-        <label>Password</label>
+        <div>
+
+            <label>Username</label>
+            <br />
+            <input type="text" id="uName" name="username" asp-for="@Model.Username">
+        </div>
+
+        <div>
+            <label>Password</label>
+            <br />
+            <input type="password" id="psw" name="password" asp-for="@Model.Password">
+        </div>
         <br />
-        <input type="password" id="psw" name="password">
-    </div>
-    <br />
 
-    <div>
-        <button class="principalButton" type="submit" id="signIn" name="signIn" style="color:white" onclick="signIn()"><b>SIGN IN</b></button>
-    </div>
-    <br />
-
-    <div class="division">
-    </div>
-    <br />
-
-    <div>
-        <label>New User</label>
+        <div>
+            <input type="submit" value="SIGN IN">
+        </div>
         <br />
-        <button class="principalButton" type="submit" id="signUp" name="signUp" style="color:white" onclick="signUp()"><b>SIGN UP</b></button>
 
-    </div>
-    <br />
+        <div class="division">
+        </div>
+        <br />
 
-    <script src="~/js"></script>
-</div>
+        <div>
+            <label>New User</label>
+            <br />
+            <button class="principalButton" id="signUp" name="signUp" style="color:white" onclick="signUp()"><b>SIGN UP</b></button>
+            <script src="~/js"></script>
+        </div>
+        <br />
+        
+    </form>
+    
 
+</body>
+</html>
