@@ -25,5 +25,11 @@ namespace Autentication_Module_RP.Pages.Users
         {
             User = await _context.User.ToListAsync();
         }
+
+        public async Task OnPostAsync()
+        {
+            User = await _context.User.ToListAsync();
+        }
+
     }
 }

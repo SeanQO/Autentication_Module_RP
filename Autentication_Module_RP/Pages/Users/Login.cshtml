@@ -1,0 +1,58 @@
+﻿@page
+@model Autentication_Module_RP.Pages.Users.LoginModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <div class="squareContainer">
+        <div class="division" style="max-height:min-content">
+            <h3>Sign in</h3>
+
+        </div>
+        <br />
+
+        <form method="post" asp-page="index">
+            <div>
+
+                <label>Username</label>
+                <br />
+                <input type="text" id="uName" name="username" asp-for="@Model.Username">
+            </div>
+
+            <div>
+                <label>Password</label>
+                <br />
+                <input type="password" id="psw" name="password" asp-for="@Model.Password">
+            </div>
+            <br />
+
+            <div>
+                <input type="submit" value="SIGN IN">
+            </div>
+            <br />
+
+        </form>
+
+        <div class="division">
+        </div>
+        <br />
+
+        <div>
+            <label>New User</label>
+            <br />
+            <button class="principalButton" id="signUp" name="signUp" style="color:white" onclick="signUp()"><b>SIGN UP</b></button>
+            <script src="~/js"></script>
+        </div>
+        <br />
+    </div>
+
+</body>
+</html>
